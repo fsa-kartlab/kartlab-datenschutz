@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Datenschutzerklärung – KartLab (FSA RaceLab)</title>
+<style>
+  :root{
+    --bg:#ffffff; --tx:#1b1f26; --dim:#5b6270; --line:#e2e5ea;
+    --acc:#ff6a00; --card:#f7f8fa;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#12141a; --tx:#e8eaee; --dim:#9aa2b1; --line:#2a2e38;
+           --acc:#ff8a3d; --card:#191c23; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+    font:16px/1.6 -apple-system,"Segoe UI",system-ui,sans-serif}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:28px;line-height:1.25;margin:0 0 6px}
+  .brand{color:var(--dim);font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+  .meta{color:var(--dim);font-size:14px;margin:10px 0 26px;
+    border-bottom:2px solid var(--acc);padding-bottom:16px}
+  h2{font-size:19px;margin:34px 0 8px;padding-top:4px}
+  h3{font-size:16px;margin:22px 0 6px}
+  p,li{margin:0 0 10px}
+  ul{padding-left:22px}
+  a{color:var(--acc)}
+  .box{background:var(--card);border-left:3px solid var(--acc);
+    border-radius:6px;padding:14px 16px;margin:14px 0}
+  .todo{background:#fff6f5;border-left:3px solid #e2453c;color:#7a1c16;
+    border-radius:6px;padding:14px 16px;margin:14px 0;font-size:15px}
+  @media (prefers-color-scheme: dark){ .todo{background:#2a1614;color:#ffc9c3} }
+  table{width:100%;border-collapse:collapse;font-size:15px;margin:12px 0 16px;
+    display:block;overflow-x:auto}
+  th,td{text-align:left;vertical-align:top;padding:8px 10px 8px 0;
+    border-bottom:1px solid var(--line)}
+  th{color:var(--dim);font-weight:600}
+  code{font-family:ui-monospace,Consolas,monospace;font-size:14px;
+    background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+  footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--line);
+    color:var(--dim);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="brand">FSA RaceLab</div>
+<h1>Datenschutzerklärung für die App KartLab</h1>
+<div class="meta">
+  App: <b>KartLab</b> · Paketname <code>com.kartlab.app</code> · Android<br>
+  Stand: 11. September 2026
+</div>
+
+
+
+<h2>1. Kurzfassung</h2>
+<p>
+  KartLab ist ein Setup- und Rundenzeiten-Protokoll für den Kartsport. Die App
+  speichert alle Eingaben <b>ausschließlich lokal auf dem Gerät</b>. Es gibt kein
+  Benutzerkonto, keine Anmeldung, keinen Server des Anbieters und keine Cloud-Synchronisation.
+</p>
+<ul>
+  <li>Der Anbieter dieser App erhält <b>keine</b> Ihrer Daten – weder Sessions, Setups,
+      Rundenzeiten, Fotos noch Standortdaten.</li>
+  <li>Es findet <b>kein</b> Tracking, <b>keine</b> Analyse, <b>keine</b> Werbung und
+      <b>kein</b> Crash-Reporting durch Dritte statt.</li>
+  <li>Eine Internetverbindung wird nur für <b>einen einzigen, optionalen Zweck</b> genutzt:
+      den Wetterabruf bei Open-Meteo.</li>
+  <li>Die Standortberechtigung ist <b>optional</b> und wird nur für Wetter, Streckenerkennung
+      und die GPS-Aufzeichnung eines Streckenlayouts verwendet – immer nur auf dem Gerät.</li>
+</ul>
+
+<h2>2. Verantwortlicher</h2>
+<p>
+  Verantwortlicher im Sinne von Art. 4 Nr. 7 DSGVO ist:
+</p>
+<p>
+  [Steffen Ade]<br>
+  [Forchenweg 34]<br>
+  [74369 Löchgau]<br>
+  [Deutschland]<br>
+  E-Mail: [steffen.ade@gmail.com]
+</p>
+<p>
+  KartLab ist ein privates Projekt unter der Bezeichnung „FSA RaceLab“. Es besteht kein
+  Zusammenhang mit dem Arbeitgeber des Entwicklers; es werden keine Daten, Systeme oder
+  Ressourcen eines Arbeitgebers verwendet.
+</p>
+<p>
+  Eine Verpflichtung zur Benennung eines Datenschutzbeauftragten besteht nicht
+  (Art. 37 DSGVO, § 38 BDSG).
+</p>
+
+<h2>3. Welche Daten die App verarbeitet – und wo sie bleiben</h2>
+<p>
+  Alle nachfolgend genannten Daten geben Sie selbst ein oder lösen deren Erhebung selbst aus.
+  Sie werden in der lokalen Datenbank der App auf Ihrem Gerät gespeichert (IndexedDB innerhalb
+  des App-eigenen, durch Android geschützten Speicherbereichs). Eine Übermittlung an den
+  Anbieter oder an Dritte erfolgt nicht.
+</p>
+<table>
+  <tr><th>Daten</th><th>Zweck</th><th>Speicherort</th></tr>
+  <tr>
+    <td>Fahrername(n) und Startnummer(n), bis zu drei Fahrer je Session</td>
+    <td>Zuordnung der Rundenzeiten</td><td>nur lokal</td>
+  </tr>
+  <tr>
+    <td>Session-Daten: Datum, Uhrzeit, Strecke, Session-Typ, Setup-Werte,
+        Rundenzeiten und Sektorzeiten, Kurven-Feedback, Notizen</td>
+    <td>Protokoll und eigene Auswertung</td><td>nur lokal</td>
+  </tr>
+  <tr>
+    <td>Wetterdaten (Lufttemperatur, Feuchte, Druck, Wind, Bewölkung) und
+        daraus berechnete Luftdichte</td>
+    <td>Bezug der Motorabstimmung zu den Bedingungen</td><td>nur lokal</td>
+  </tr>
+  <tr>
+    <td>Fotos, die Sie in der App auswählen (z.&nbsp;B. Rasterfoto der Achsmessung,
+        Distanzscheiben, Reifenbild)</td>
+    <td>Dokumentation des Setups</td><td>nur lokal</td>
+  </tr>
+  <tr>
+    <td>Standortdaten (Koordinaten) bei Nutzung der optionalen Funktionen</td>
+    <td>Wetter am Ort, Vorauswahl der Strecke, GPS-Aufzeichnung eines Streckenlayouts,
+        Speichern der Streckenkoordinate</td>
+    <td>nur lokal; Koordinaten werden für den Wetterabruf an Open-Meteo übermittelt
+        (siehe Abschnitt 5)</td>
+  </tr>
+  <tr>
+    <td>Einstellungen (z.&nbsp;B. markierte Setup-Felder, Sniper-Rastervorlage)</td>
+    <td>Bedienung der App</td><td>nur lokal</td>
+  </tr>
+</table>
+<p>
+  Ob es sich bei diesen Angaben um personenbezogene Daten handelt, hängt von Ihren Eingaben ab
+  (etwa dem Namen eines Fahrers). Da die Daten das Gerät nicht verlassen, verarbeitet sie
+  ausschließlich Sie selbst als Nutzer.
+</p>
+
+<h2>4. Berechtigungen der App</h2>
+<table>
+  <tr><th>Berechtigung</th><th>Wofür</th><th>Pflicht?</th></tr>
+  <tr>
+    <td>Internet (<code>INTERNET</code>)</td>
+    <td>ausschließlich Abruf der Wetterdaten bei Open-Meteo</td>
+    <td>keine Abfrage durch Android; ohne Internet funktioniert die App vollständig,
+        nur der Wetterabruf entfällt</td>
+  </tr>
+  <tr>
+    <td>Standort (<code>ACCESS_FINE_LOCATION</code>,
+        <code>ACCESS_COARSE_LOCATION</code>)</td>
+    <td>Wetter am aktuellen Ort, Vorauswahl der nächstgelegenen Strecke,
+        GPS-Aufzeichnung eines Streckenlayouts, Setzen der Streckenkoordinate</td>
+    <td>optional; kann verweigert oder jederzeit in den Android-Einstellungen
+        entzogen werden. Alle übrigen Funktionen bleiben nutzbar.</td>
+  </tr>
+  <tr>
+    <td>Dateiauswahl / Dateidialog</td>
+    <td>Auswahl von Fotos sowie Export und Import des Backups. Es wird der
+        System-Dateidialog von Android verwendet; die App erhält Zugriff nur auf die
+        von Ihnen ausgewählte Datei.</td>
+    <td>nur bei Nutzung dieser Funktionen</td>
+  </tr>
+</table>
+<p>
+  Die App verwendet <b>keine</b> Werbe-ID, liest <b>keine</b> Kontakte, keinen Kalender,
+  keine Telefonie- oder SMS-Daten und keine Geräte-Kennungen aus.
+</p>
+
+<h2>5. Der einzige externe Dienst: Wetterabruf bei Open-Meteo</h2>
+<p>
+  Wenn Sie den Wetterabruf nutzen – manuell über die Schaltfläche „Wetter automatisch
+  abrufen“ oder automatisch beim Anlegen einer neuen Session – stellt die App eine
+  Verbindung zu <code>api.open-meteo.com</code> her.
+</p>
+<h3>Übermittelte Daten</h3>
+<ul>
+  <li>die Koordinaten (Breite und Länge), für die das Wetter abgerufen wird – entweder Ihre
+      GPS-Position oder die gespeicherte Streckenkoordinate, gerundet auf vier Dezimalstellen;</li>
+  <li>technisch unvermeidbar Ihre IP-Adresse sowie die üblichen Verbindungsdaten
+      (Zeitpunkt, angefragte Adresse).</li>
+</ul>
+<p>
+  Ein Benutzerkonto, ein API-Schlüssel oder eine Kennung der App oder des Geräts wird
+  <b>nicht</b> übertragen. Die Anfragen enthalten nichts aus Ihrem Setup-Protokoll.
+</p>
+<h3>Anbieter und Rechtsgrundlage</h3>
+<p>
+  Anbieter ist die <b>OpenMeteo GmbH, Hintere Schilligmatte 6, 6463 Bürglen (UR), Schweiz</b>.
+  Nach den Nutzungsbedingungen von Open-Meteo werden IP-Adressen aus technischen Gründen
+  verarbeitet und Server-Logdateien, die auch geografische Koordinaten enthalten können,
+  nach 90 Tagen gelöscht
+  (<a href="https://open-meteo.com/en/terms">open-meteo.com/en/terms</a>).
+</p>
+<p>
+  Die Schweiz ist ein Drittland im Sinne der DSGVO, für das die Europäische Kommission ein
+  angemessenes Datenschutzniveau festgestellt hat (Angemessenheitsbeschluss gemäß
+  Art. 45 DSGVO). Ein zusätzliches Schutzinstrument ist daher nicht erforderlich.
+</p>
+<p>
+  Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO – die Übermittlung ist zur Erbringung der
+  von Ihnen angeforderten Funktion erforderlich –, hilfsweise Art. 6 Abs. 1 lit. f DSGVO
+  (berechtigtes Interesse an der Bereitstellung der Wetterfunktion). Sie können den Abruf
+  unterlassen und alle Wetterwerte manuell eintragen; dann findet keinerlei
+  Datenübermittlung statt.
+</p>
+
+<h2>6. Keine Werbung, kein Tracking, keine Analyse</h2>
+<p>
+  In der App sind <b>keine</b> Werbenetzwerke, Analyse-SDKs, Crash-Reporting-Dienste,
+  Social-Media-Plugins oder Tracking-Bibliotheken eingebunden. Es werden keine Profile
+  gebildet, und es findet keine automatisierte Entscheidungsfindung im Sinne von
+  Art. 22 DSGVO statt.
+</p>
+<p>
+  In der Benutzeroberfläche sind Flächen für eine mögliche spätere Anzeige von Werbung
+  gestalterisch vorgesehen. Diese Flächen sind ausgeblendet und enthalten keine Inhalte
+  Dritter; es wird dafür nichts geladen und nichts übertragen. Sollte künftig Werbung
+  eingebunden werden, wird diese Datenschutzerklärung vorher entsprechend geändert und –
+  soweit erforderlich – eine Einwilligung eingeholt.
+</p>
+
+<h2>7. Verteilung über Google Play</h2>
+<p>
+  Die App wird über Google Play verteilt. Beim Herunterladen, Aktualisieren und
+  Installieren verarbeitet Google Daten (unter anderem Ihr Google-Konto, Gerätedaten und
+  IP-Adresse) in eigener Verantwortung. Darauf hat der Anbieter dieser App keinen Einfluss.
+  Maßgeblich ist die Datenschutzerklärung von Google:
+  <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+</p>
+<p>
+  Google Play Protect kann installierte Apps auf dem Gerät prüfen; auch dies erfolgt
+  außerhalb des Einflussbereichs des Anbieters. Aus dem Play Store erhält der Anbieter nur
+  aggregierte, nicht personenbezogene Statistiken (z.&nbsp;B. Anzahl der Installationen)
+  sowie von Nutzern freiwillig abgegebene Bewertungen.
+</p>
+
+<h2>8. Speicherdauer und Löschung</h2>
+<ul>
+  <li>Alle Daten bleiben so lange auf dem Gerät, bis Sie sie in der App löschen
+      (einzelne Session, Strecke, Foto oder Wiki-Eintrag) oder die App-Daten über die
+      Android-Einstellungen löschen.</li>
+  <li><b>Wird die App deinstalliert, werden alle Daten gelöscht.</b> Es gibt keine Kopie
+      beim Anbieter und keine Wiederherstellungsmöglichkeit. Nutzen Sie die Backup-Funktion
+      (Daten → „Backup exportieren“), wenn Sie Ihre Aufzeichnungen behalten wollen.</li>
+  <li>Ein exportiertes Backup liegt dort, wo Sie es über den Android-Dateidialog abgelegt
+      haben – etwa im Download-Ordner oder in einem Cloud-Speicher Ihrer Wahl. Für diese
+      Datei sind allein Sie verantwortlich; sie ist nicht verschlüsselt.</li>
+  <li>Beim Anbieter fallen keine Daten an und werden daher auch keine gespeichert.</li>
+</ul>
+
+<h2>9. Ihre Rechte</h2>
+<p>
+  Ihnen stehen nach der DSGVO die Rechte auf Auskunft (Art. 15), Berichtigung (Art. 16),
+  Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit
+  (Art. 20) und Widerspruch (Art. 21) zu. Außerdem können Sie sich bei einer
+  Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO), etwa bei der Behörde Ihres
+  Wohnsitzes.
+</p>
+<div class="box">
+  <b>Praktischer Hinweis:</b> Da der Anbieter keine Ihrer Daten erhält, kann er zu Ihren
+  App-Inhalten keine Auskunft geben und sie auch nicht löschen. Beides können Sie direkt
+  und vollständig selbst tun: Auskunft und Übertragbarkeit über
+  <i>Daten → Backup exportieren</i> (maschinenlesbares JSON) bzw.
+  <i>Sessions als CSV</i>, Löschung über die Löschfunktionen in der App oder über
+  <i>Android-Einstellungen → Apps → KartLab → Speicher → Daten löschen</i>.
+</div>
+<p>
+  Für Anfragen zu dieser Erklärung: [E-Mail-Adresse].
+</p>
+
+<h2>10. Datensicherheit</h2>
+<p>
+  Die Daten liegen im App-eigenen Speicherbereich, den Android gegenüber anderen Apps
+  abschirmt; auf einem verschlüsselten Gerät sind sie Teil der Geräteverschlüsselung.
+  Der Wetterabruf erfolgt ausschließlich über HTTPS. Die Inhalte der App werden lokal
+  über eine abgesicherte Herkunft (<code>https://kart.local/</code>, nur innerhalb der App)
+  ausgeliefert; es werden keine Inhalte Dritter geladen.
+</p>
+<p>
+  Ein absoluter Schutz ist technisch nicht möglich. Verantwortlich für Gerätesperre,
+  Systemaktualisierungen und den Umgang mit exportierten Backups sind Sie selbst.
+</p>
+
+<h2>11. Kinder und Jugendliche</h2>
+<p>
+  Die App richtet sich an Kartsportler und deren Eltern und ist nicht auf Kinder unter
+  13 Jahren ausgerichtet. Werden Daten Minderjähriger eingetragen – etwa der Name eines
+  jugendlichen Fahrers –, geschieht dies durch den Nutzer selbst, und die Daten verbleiben
+  auf dem Gerät. Eine Erhebung von Daten über Kinder durch den Anbieter findet nicht statt.
+</p>
+
+<h2>12. Änderungen dieser Erklärung</h2>
+<p>
+  Diese Erklärung wird angepasst, wenn sich die App ändert – insbesondere, falls künftig
+  weitere Dienste, eine Synchronisation oder Werbung eingebunden werden. Es gilt jeweils
+  die auf dieser Seite veröffentlichte Fassung; der Stand ist oben angegeben.
+</p>
+
+<footer>
+  KartLab · FSA RaceLab · Paketname <code>com.kartlab.app</code> ·
+  Stand 11.09.2026
+</footer>
+
+</div>
+</body>
+</html>
